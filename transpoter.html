@@ -1,0 +1,208 @@
+<html>
+<head>
+    <title>Transporter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initialscale=1.0">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous"></script>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family:sans-serif;
+            }
+            #navbar{
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 100;
+                padding: .5rem .5rem;
+                box-shadow: 5px 5px 20px grey;
+                background-color: blue;
+            }
+            .navbar .navbar-brand {
+
+                font-size: 28px;
+                font-weight: 600;
+                color:black;
+            }
+            .navbar i{
+              color: white;
+              padding: 5px;
+              font-size: 25px;
+            }
+            #navbarNav a{
+                color:white;
+            }
+            #navbarNav a:hover{
+                border-bottom: 2px solid black;
+            }
+            .btn{
+                font-weight: bold;
+            }
+            #navbar button a{
+                text-decoration: none;
+                font-size: 20px;
+                color: black;
+                
+            }
+            .home{
+              background-image: url(bg\ image.jpg);
+              width: 100%;
+              height: 90%;
+            }
+            .home h1{
+              justify-content: space-between;
+              text-align: center;
+              padding-top: 3%;
+              font-weight: bold;
+              padding-left: 8%;
+            }
+            .home h1 span{
+              color: blue;
+            }
+            /*-services-*/
+            .ourservices{
+              text-align: center;
+              margin-top: 5%;
+            }
+            .select{
+              padding-left: 150px;
+            }
+            .select i,p,select{
+              display: inline;
+              padding: 5px;
+             
+              
+            }
+            .products1 h5 a{
+              text-decoration: none;
+              color: white;
+            }
+            .select i{
+              font-size:25px ;
+
+            }
+            .products1 {
+              padding: 30px;
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+            }
+            .cart .products1 .card-body{
+              background-color: blue;
+              color: white;
+              text-align: center;
+            }
+
+
+            /*-services-*/
+            .others{
+                margin-left: 200px;
+            }
+            </style>
+</head>
+    <body>
+        <!--navbar-->
+        
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+            <div class="container-fluid">
+              <i class="fa-solid fa-location-dot"></i>
+              <a class="navbar-brand" href="#">Transporter</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link"  href="#home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#ourservices">Our services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">For Enterprices</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                </ul>
+                <button class="btn" ><a href="#home">Login</a> </button>
+              </div>
+            </div>
+          </nav>
+        <!--navbar-->
+
+
+           <!--home-->
+           <section id="home">
+
+           <div class="home">
+            <h1>Anything <span>Anytime</span> Any where</h1>
+           </div>
+          </section>
+           <!--home-->
+           <!--our services-->
+           <section id="ourservices">
+           <div class="ourservices">
+            <h1>Our Services</h1>
+            </div>
+            <div class="select">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>City</p>
+            <select>
+              <option value="select">select</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Banglore">Banglore</option>
+              <option value="kerala">kerala</option>
+              <option value="Andhra Pradesh">Andhra pradesh</option>
+            </select>
+          </div>
+
+          <div class="cart">
+              <div class="products1">
+              <div class="card" style="width: 15rem;">
+                <a href=""><img src="bike.jpg" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Two Wheelers</a></h5>
+                </div>
+              </div>
+              <div class="card" style="width: 15rem;">
+                <a href=""><img src="truck1.png" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title"><a href="">Trucks</a></h5>
+                </div>
+              </div>
+                <div class="card" style="width: 15rem;">
+                  <a href=""><img src="truck.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="">Packers And Movers</a></h5>
+                  </div>
+                </div>
+                <div class="card" style="width: 15rem;">
+                  <a href=""><img src="all india.jpg" class="card-img-top" alt="..."></a>
+                  <div class="card-body">
+                    <h5 class="card-title"><a href="">All India Parcels</a></h5>
+                  </div>
+                </div>
+  
+
+          </div>
+           </div>
+           <div class="others">
+            <img src="1.png">
+            <img src="2.png">
+            <img src="3.png">
+
+           </div>
+          </section>
+        
+    </body>
+    </html>
